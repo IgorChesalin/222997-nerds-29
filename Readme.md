@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Игорь Чесалин](https://up.htmlacademy.ru/htmlcss/29/user/222997).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Боровик](https://htmlacademy.ru/profile/mouxez).
 
 ---
 
