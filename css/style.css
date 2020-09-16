@@ -1,0 +1,211 @@
+/* Variables */
+
+::root {
+  /* названия цветов по coolors.co нормально ли так?? */
+  --black: #000000;
+  --gunmetal: #283136;
+  --white: #ffffff;
+  --dim-gray: #666666;
+  --onyx: #444444;
+  --background: #888888;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  /* не работают цвета ... */
+  background-color: #eeeeee;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* нужно ли сразу описать состояние ссылок ховер и тд? */
+
+.site-navigation {
+  list-style: none;
+}
+
+.main-basket {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* MAIN */
+
+.slider-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: ;
+}
+
+.slider-text {
+  font-size: 16px;
+  /* нормал это и есть 500? */
+  font-weight: normal;
+  line-height: 24px;
+  color: ;
+}
+
+.slider-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.products-list {
+  list-style: none;
+}
+
+li.products-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+li.products-item p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+li.products-item button {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+li.products-item:nth-child(1) button {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+li.products-item:nth-child(2) button {
+  color: #ffffff;
+  background-color: #00ca74;
+}
+
+li.products-item:nth-child(3) button {
+  color: #ffffff;
+  background-color: #efc849;
+}
+
+/* FEATURES */
+
+.features-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.features-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283136;
+}
+
+.features-left-side h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #283136;
+  text-transform: uppercase;
+}
+
+.features-list li {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283136;
+}
+
+.features-right-side p {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.features-right-side span {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.features-right-side .strong {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* FOOTER */
+
+.contacts p:nth-child(1) {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts p:nth-child(2) {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #666666;
+}
+
+.contacts-phone {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #666666;
+}
+
+.contacts-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.promo-slogan {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.promo-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #444444;
+}
