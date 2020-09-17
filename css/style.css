@@ -76,6 +76,16 @@ img {
 
 /* MAIN */
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
+}
+
+
 .slider-title {
   font-size: 55px;
   font-weight: 500;
@@ -91,9 +101,6 @@ img {
 }
 
 .slider-button {
-  display: block;
-  width: 240px;
-  height: 50px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
