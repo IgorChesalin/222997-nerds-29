@@ -1,13 +1,29 @@
 /* Variables */
 
-::root {
-  /* названия цветов по coolors.co нормально ли так?? */
+:root {
+  /*названия цветов по coolors.co*/
   --black: #000000;
+  --black-03: rgba(0, 0, 0, 0.3);
   --gunmetal: #283136;
   --white: #ffffff;
   --dim-gray: #666666;
   --onyx: #444444;
   --background: #888888;
+
+  --red-hover: #FB565A;
+
+  --red-button: #FB565A;
+  --red-button-hover: #E74246;
+  --red-button-active: #D7373B;
+
+  --green-button: #00CA74;
+  --green-button-hover: #00BC6C;
+  --green-button-active: #00AA62;
+
+  --yellow-button: #EFC84A;
+  --yellow-button-hover: #EAB534;
+  --yellow-button-active: #E5A722;
+
 }
 
 /* Global */
@@ -17,14 +33,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  /* не работают цвета ... */
-  background-color: #eeeeee;
+  background-color: var(--background);
 }
 
 a {
   text-decoration: none;
+  color: var(--black);
 }
 
 img {
@@ -38,7 +52,6 @@ img {
   font-weight: 500;
   text-transform: uppercase;
 }
-/* нужно ли сразу описать состояние ссылок ховер и тд? */
 
 .site-navigation {
   list-style: none;
@@ -51,28 +64,51 @@ img {
   text-transform: uppercase;
 }
 
+.site-navigation a:hover,
+.main-basket:hover {
+  color: var(--red-hover);
+}
+
+.site-navigation a:active,
+.main-basket:active {
+  color: var(--black-03);
+}
+
 /* MAIN */
 
 .slider-title {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-  color: ;
+  color: var(--black);
 }
 
 .slider-text {
   font-size: 16px;
-  /* нормал это и есть 500? */
-  font-weight: normal;
+  font-weight: 400;
   line-height: 24px;
-  color: ;
+  color: var(--gunmetal)
 }
 
 .slider-button {
+  display: block;
+  width: 240px;
+  height: 50px;
   font-size: 16px;
   line-height: 18px;
-  color: #ffffff;
-  background-color: #fb565a;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--red-button);
+  border-radius: 3px;
+}
+
+.slider-button:hover {
+  background-color: var(--red-button-hover); 
+}
+
+.slider-button:active {
+  background-color: var(--red-button-active); 
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .products-list {
@@ -82,34 +118,61 @@ img {
 li.products-item h3 {
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
+  color: var(--black);
 }
 
 li.products-item p {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
+  color: var(--gunmetal);
 }
 
-li.products-item button {
+.products-item-button {
   font-size: 16px;
   line-height: 18px;
+  color: #ffffff;
 }
 
-li.products-item:nth-child(1) button {
-  color: #ffffff;
-  background-color: #fb565a;
+.red-button{
+  background-color: var(--red-button);
 }
 
-li.products-item:nth-child(2) button {
-  color: #ffffff;
-  background-color: #00ca74;
+.red-button:hover {
+  background-color: var(--red-button-hover); 
 }
 
-li.products-item:nth-child(3) button {
-  color: #ffffff;
-  background-color: #efc849;
+.red-button:active {
+  background-color: var(--red-button-active); 
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.green-button {
+  background-color: var(--green-button);
+}
+
+.green-button:hover {
+  background-color: var(--green-button-hover); 
+}
+
+.green-button:active {
+  background-color: var(--green-button-active); 
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.yellow-button {
+  background-color: var(--yellow-button);
+}
+
+.yellow-button:hover {
+  background-color: var(--yellow-button-hover); 
+}
+
+.yellow-button:active {
+  background-color: var(--yellow-button-active); 
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 /* FEATURES */
@@ -118,21 +181,21 @@ li.products-item:nth-child(3) button {
   font-size: 45px;
   line-height: 45px;
   font-weight: normal;
-  color: #000000;
+  color: var(--black);
 }
 
 .features-text {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
-  color: #283136;
+  color: var(--gunmetal);
 }
 
 .features-left-side h4 {
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
-  color: #283136;
+  color: var(--gunmetal);
   text-transform: uppercase;
 }
 
@@ -140,7 +203,7 @@ li.products-item:nth-child(3) button {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
-  color: #283136;
+  color: var(--gunmetal);
 }
 
 .features-right-side p {
@@ -154,14 +217,14 @@ li.products-item:nth-child(3) button {
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
-  color: #000000;
+  color: var(--black);
 }
 
 .features-right-side .strong {
   font-size: 45px;
   line-height: 64px;
   font-weight: bold;
-  color: #000000;
+  color: var(--black);
 }
 
 /* FOOTER */
@@ -171,41 +234,41 @@ li.products-item:nth-child(3) button {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--black);
 }
 
 .contacts p:nth-child(2) {
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
-  color: #666666;
+  color: var(--dim-gray);
 }
 
 .contacts-phone {
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
-  color: #666666;
+  color: var(--dim-gray);
 }
 
 .contacts-button {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: #ffffff;
-  background-color: #fb565a;
+  color: var(--white);
+  background-color: var(--red-button);
 }
 
 .promo-slogan {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
-  color: #000000;
+  color: var(--black);
 }
 
 .promo-text {
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
-  color: #444444;
+  color: var(--onyx);
 }
