@@ -4,6 +4,7 @@
   /*названия цветов по coolors.co*/
   --black: #000000;
   --black-03: rgba(0, 0, 0, 0.3);
+  --black-06: rgba(0, 0, 0, 0.6);
   --gunmetal: #283136;
   --white: #ffffff;
   --dim-gray: #666666;
@@ -24,6 +25,9 @@
   --yellow-button-hover: #EAB534;
   --yellow-button-active: #E5A722;
 
+  --grey-button: #EEEEEE;
+  --grey-button-hover: #DFDFDF;
+  --grey-button-active: #D5D5D5;
 }
 
 /* Global */
@@ -74,7 +78,7 @@ img {
   color: var(--black-03);
 }
 
-/* MAIN */
+/* MAIN index+catalog */
 
 .visually-hidden {
   position: absolute;
@@ -132,7 +136,7 @@ li.products-item h3 {
 li.products-item p {
   font-size: 16px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--gunmetal);
 }
 
@@ -186,21 +190,21 @@ li.products-item p {
 .features-title {
   font-size: 45px;
   line-height: 45px;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--black);
 }
 
 .features-text {
   font-size: 16px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--gunmetal);
 }
 
 .features-left-side h4 {
   font-size: 16px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--gunmetal);
   text-transform: uppercase;
 }
@@ -208,28 +212,28 @@ li.products-item p {
 .features-list li {
   font-size: 16px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--gunmetal);
 }
 
 .features-right-side p {
-  font-weight: bold;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .features-right-side span {
   font-size: 16px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--black);
 }
 
 .features-right-side .strong {
   font-size: 45px;
   line-height: 64px;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--black);
 }
 
@@ -238,7 +242,7 @@ li.products-item p {
 .contacts p:nth-child(1) {
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--black);
 }
@@ -246,14 +250,14 @@ li.products-item p {
 .contacts p:nth-child(2) {
   font-size: 16px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--dim-gray);
 }
 
 .contacts-phone {
   font-size: 16px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--dim-gray);
 }
 
@@ -268,13 +272,87 @@ li.products-item p {
 .promo-slogan {
   font-size: 36px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--black);
 }
 
 .promo-text {
   font-size: 16px;
   line-height: 22px;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--onyx);
+}
+
+/* CATALOG */
+
+.main-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--black);
+  text-align: center;
+}
+
+.filter-header p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.filter-header button {
+  width: 100px;
+  min-height: 100px;
+}
+
+.filter-header-button {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--black-03);
+}
+
+.filter-header-button:hover {
+ color: var(--black-06); 
+}
+
+.filter-header-button:active {
+ color: var(--black); 
+}
+
+.filter p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.filter li {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: var(--gunmetal);
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--black);
+  background-color: var(-);
+}
+
+.filter-button {
+  background-color: var(--grey-button);
+}
+
+.filter-button:hover {
+  background-color: var(--grey-button-hover); 
+}
+
+.filter-button:active {
+  background-color: var(--grey-button-active); 
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  /* добавляем ли уже везде бордер радиус? */
+  border-radius: 3px;
 }
