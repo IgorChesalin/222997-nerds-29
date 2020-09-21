@@ -1,146 +1,114 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>HTML Academy: Нёрдс</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
 
-  <body class="page-body">
-    <header class="main-header">
-      <a class="main-header-logo">
-        <img src="https://via.placeholder.com/150" alt="Логотип Нёрдс" />
-      </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a href="index.html" title="Студия Нёрдс">Студия Нёрдс</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a href="catalog.html" title="Страница магазина">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-        <a href="" class="main-basket">Корзина</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="normalize.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
 
-    <main class="container">
-      <h1 class="main-title">Магазин готовых шаблонов</h1>
-      <section class="filter-header">
-        <p>Стоимость:</p>
-        <p>Сортировать:</p>
-        <button type="button">
-          <span class="filter-header-button">по цене</span>
-        </button>
-        <button type="button">
-          <span class="filter-header-button">по типу</span>
-        </button>
-        <button type="button">
-          <span class="filter-header-button">по названию</span>
-        </button>
-        <button type="button">
-          <span class="filter-header-button">up</span>
-        </button>
-        <button type="button">
-          <span class="filter-header-button">down</span>
-        </button>
-      </section>
+<body>
+  <header class="main-header">
+    <a>
+      <img src="https://via.placeholder.com/150" alt="Логотип Нёрдс" />
+    </a>
+    <nav class="main-navigation">
+      <ul>
+        <li><a class="main-navigation-link" href="index.html" title="Студия Нёрдс">Студия Нёрдс</a></li>
+        <li><a class="main-navigation-link" href="">Клиенты</a></li>
+        <li><a class="main-navigation-link" href="catalog.html" title="Страница магазина">Магазин</a></li>
+        <li><a class="main-navigation-link" href="">Контакты</a></li>
+      </ul>
+      <a href="" class="main-basket" title="Корзина">Корзина</a>
+    </nav>
+  </header>
 
-      <div class="filter">
-        <!-- тут будет фильтр     -->
-        <p>Сетка:</p>
-        <ul>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
-        <p>Особенности:</p>
-        <ul>
-          <li>Слайдер</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
-        </ul>
-        <button class="filter-button" type="button">Показать</button>
-      </div>
+  <main>
+    <h1 class="main-title">Магазин готовых шаблонов</h1>
+    <section>
+      <p class="filter-header-type">Стоимость:</p>
+      <p class="filter-header-type">Сортировать:</p>
+      <button class="filter-header-buttom" type="button">по цене</button>
+      <button class="filter-header-buttom" type="button">по типу</button>
+      <button class="filter-header-buttom" type="button">по названию</button>
+      <button class="filter-header-buttom" type="button">up</button>
+      <button class="filter-header-buttom" type="button">down</button>
+    </section>
 
-      <section class="catalog">
-        <ul>
-          <li>
-            <img
-              src="https://via.placeholder.com/150x100"
-              alt="Превью сайта Седона"
-            />
-          </li>
-          <li>
-            <img
-              src="https://via.placeholder.com/150x100"
-              alt="Превью сайта Пинк"
-            />
-          </li>
-          <li>
-            <img
-              src="https://via.placeholder.com/150x100"
-              alt="Превью сайта Бородинский"
-            />
-          </li>
-          <li>
-            <img
-              src="https://via.placeholder.com/150x100"
-              alt="Превью сайта Мишка"
-            />
-          </li>
-          <li>
-            <img
-              src="https://via.placeholder.com/150x100"
-              alt="Превью сайта А+"
-            />
-          </li>
-          <li>
-            <img
-              src="https://via.placeholder.com/150x100"
-              alt="Превью сайта Кваст"
-            />
-          </li>
-        </ul>
-      </section>
+    <div>
+      <!-- тут будет фильтр     -->
+      <p class="main-filter-category">Сетка:</p>
+      <ul>
+        <li class="main-filter-item">Адаптивная</li>
+        <li class="main-filter-item">Фиксированная</li>
+        <li class="main-filter-item">Резиновая</li>
+      </ul>
+      <p class="main-filter-category">Особенности:</p>
+      <ul>
+        <li class="main-filter-item">Слайдер</li>
+        <li class="main-filter-item">Блок преимуществ</li>
+        <li class="main-filter-item">Новости</li>
+        <li class="main-filter-item">Галерея</li>
+        <li class="main-filter-item">Корзина</li>
+      </ul>
+      <button class="filter-button" type="button">Показать</button>
+    </div>
 
-      <div class="pagination">
-        <ul>
-          <li><a href="">1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">Следующая</a></li>
-        </ul>
-      </div>
-    </main>
+    <section>
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/150x100" alt="Превью сайта Седона" />
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150x100" alt="Превью сайта Пинк" />
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150x100" alt="Превью сайта Бородинский" />
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150x100" alt="Превью сайта Мишка" />
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150x100" alt="Превью сайта А+" />
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150x100" alt="Превью сайта Кваст" />
+        </li>
+      </ul>
+    </section>
 
-    <footer class="main-footer">
-      <div class="map"></div>
-      <div class="contacts">
-        <p>NЁRDS DESIGN STUDIO</p>
-        <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
-        <a class="contacts-phone" href="tel:+78122757575"
-          >тел. +7(812)275-75-75</a
-        >
+    <div>
+      <ul>
+        <li><a class="pagination-page" href="">1</a></li>
+        <li><a class="pagination-page" href="">2</a></li>
+        <li><a class="pagination-page" href="">3</a></li>
+        <li><a class="pagination-page" href="">Следующая</a></li>
+      </ul>
+    </div>
+  </main>
 
-        <button class="contacts-button" type="button">Напишите нам</button>
-      </div>
-      <div class="social">
-        <ul class="social-list">
-          <li><a class="social-button" href=""></a>VK</li>
-          <li><a class="social-button" href=""></a>FB</li>
-          <li><a class="social-button" href=""></a>INSTA</li>
-        </ul>
-      </div>
-      <div class="promo">
-        <p class="promo-slogan">Давайте дружить, это выгодно!</p>
-        <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-    </footer>
-  </body>
+  <footer>
+    <div>
+      <p class="contacts-company">NЁRDS DESIGN STUDIO</p>
+      <p class="contacts-adress">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+      <a class="contacts-phone" href="tel:+78122757575">тел. +7(812)275-75-75</a>
+
+      <button class="contacts-button" type="button">Напишите нам</button>
+    </div>
+    <div>
+      <ul>
+        <li><a href=""></a>VK</li>
+        <li><a href=""></a>FB</li>
+        <li><a href=""></a>INSTA</li>
+      </ul>
+    </div>
+    <div>
+      <p class="promo-slogan">Давайте дружить, это выгодно!</p>
+      <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
