@@ -292,6 +292,7 @@ li.products-item p {
   font-weight: 500;
   color: var(--black);
   text-align: center;
+  background-color: var(--background-header);
 }
 
 .filter-header-type {
