@@ -238,6 +238,11 @@ li.products-item p {
   color: var(--black);
 }
 
+/* пока добавил еще достилизую */
+.portfolio {
+  list-style: none;
+}
+
 /* FOOTER */
 
 .contacts-company {
