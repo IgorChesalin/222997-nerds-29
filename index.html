@@ -10,30 +10,35 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <a>
-      <img src="img\nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс" />
-    </a>
-    <nav class="main-navigation">
-      <ul>
-        <li><a class="main-navigation-link" href="">Студия</a></li>
-        <li><a class="main-navigation-link" href="">Клиенты</a></li>
-        <li><a class="main-navigation-link" href="catalog.html" title="Страница магазина">Магазин</a></li>
-        <li><a class="main-navigation-link" href="">Контакты</a></li>
-      </ul>
+  <div class="main-header-wrapper">
+    <header class="main-header">
+      <a class="main-logo">
+        <img src="img\nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс" />
+      </a>
+      <nav class="main-navigation">
+        <ul class="main-navigation-list">
+          <li><a class="main-navigation-link" href="">Студия</a></li>
+          <li><a class="main-navigation-link" href="">Клиенты</a></li>
+          <li><a class="main-navigation-link" href="catalog.html" title="Страница магазина">Магазин</a></li>
+          <li><a class="main-navigation-link" href="">Контакты</a></li>
+        </ul>
+      </nav>
       <a href="" class="main-basket" title="Корзина">Корзина</a>
-    </nav>
-  </header>
+    </header>
+  </div>
 
-  <main>
+  <main class="main-container">
     <h1 class="visually-hidden">Интернет магазин «Nerds»</h1>
-    <div>
-      <p class="slider-title">Долго, дорого, скурпулезно</p>
-      <p class="slider-text">
-        Математически выверенный дизайн для вашего сайта или мобильного
-        приложения.
-      </p>
-      <a href="" class="slider-button">Узнать больше</a>
+
+    <div class="slider-wrapper">
+      <div>
+        <p class="slider-title">Долго, дорого, скурпулезно</p>
+        <p class="slider-text">
+          Математически выверенный дизайн для вашего сайта или мобильного
+          приложения.
+        </p>
+        <a href="" class="slider-button">Узнать больше</a>
+      </div>
       <div>
         <img src="img\index-slide-1.png" width="760" height="431" alt="картинка слайдера 1" />
       </div>
@@ -64,7 +69,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="features-wrapper">
       <h2 class="visually-hidden">О нас</h2>
       <div class="features-left-side">
         <h3 class="features-title">
@@ -122,25 +127,27 @@
     </section>
   </main>
 
-  <footer>
-    <div>
+  <footer class="footer">
+
+    <div class="footer-map">
       <p class="contacts-company">NЁRDS DESIGN STUDIO</p>
       <p class="contacts-adress">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
       <a class="contacts-phone" href="tel:+78122757575">тел. +7(812)275-75-75</a>
-
       <button class="contacts-button" type="button">Напишите нам</button>
     </div>
-    <div>
-      <ul>
+
+    <div class="footer-promo">
+      <ul class="footer-social">
         <li><a href=""></a>VK</li>
         <li><a href=""></a>FB</li>
         <li><a href=""></a>INSTA</li>
       </ul>
+      <div>
+        <p class="promo-slogan">Давайте дружить, это выгодно!</p>
+        <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
-    <div>
-      <p class="promo-slogan">Давайте дружить, это выгодно!</p>
-      <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
+
   </footer>
 </body>
 

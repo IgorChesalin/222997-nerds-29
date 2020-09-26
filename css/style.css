@@ -35,7 +35,7 @@
 /* Global */
 
 body {
-  min-width: 960px;
+  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
@@ -57,6 +57,7 @@ img {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
+  justify-self: center;
 }
 
 .main-basket {
@@ -76,11 +77,54 @@ img {
   color: var(--black-03);
 }
 
-.main-header {
+/* .main-header {
   background-color: var(--background-header);
-}
+} */
 
 /* MAIN index+catalog */
+
+.main-header-wrapper {
+  background-color: var(--background-header);
+
+}
+
+.main-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 300px 1fr 255px;
+}
+
+.main-logo {
+  justify-self: center;
+}
+
+.main-navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content; 
+  gap: 45px;
+}
+
+.main-basket {
+  justify-self: center;
+}
+
+.main-container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+}
+
+.slider-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
 
 .visually-hidden {
   position: absolute;
@@ -120,6 +164,12 @@ img {
 .slider-button:active {
   background-color: var(--red-button-active);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 100px;
 }
 
 .products-list {
@@ -188,6 +238,11 @@ li.products-item p {
 
 /* FEATURES */
 
+.features-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+}
+
 .features-title {
   font-size: 45px;
   line-height: 45px;
@@ -241,9 +296,26 @@ li.products-item p {
 /* пока добавил еще достилизую */
 .portfolio {
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* FOOTER */
+
+.footer {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.footer-promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-social {
+  list-style: none;
+}
 
 .contacts-company {
   font-size: 18px;
