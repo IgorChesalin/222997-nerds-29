@@ -30,9 +30,14 @@
   --grey-button: #eeeeee;
   --grey-button-hover: #dfdfdf;
   --grey-button-active: #d5d5d5;
+
+  --box-shadow: rgba(0, 1, 1, 0.1);
 }
 
 /* Global */
+/* *, *::before, *::after {
+  background-color: rgba(255, 0, 0, 0.1);
+  } */
 
 body {
   min-width: 1440px;
@@ -77,23 +82,19 @@ img {
   color: var(--black-03);
 }
 
-/* .main-header {
-  background-color: var(--background-header);
-} */
-
 /* MAIN index+catalog */
 
 .main-header-wrapper {
-  background-color: var(--background-header);
-
+    background-color: var(--background-header);
 }
 
 .main-header {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   display: grid;
   grid-template-columns: 300px 1fr 255px;
+  background-color: var(--background-header);
 }
 
 .main-logo {
@@ -116,14 +117,13 @@ img {
 .main-container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
-
+  /* padding: 0 10px;   */
 }
 
 .slider-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  background-color: var(--background-header);
 }
 
 .visually-hidden {
@@ -163,7 +163,7 @@ img {
 
 .slider-button:active {
   background-color: var(--red-button-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--box-shadow);
 }
 
 .products-list {
@@ -207,7 +207,7 @@ li.products-item p {
 
 .red-button:active {
   background-color: var(--red-button-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--box-shadow);
 }
 
 .green-button {
@@ -220,7 +220,7 @@ li.products-item p {
 
 .green-button:active {
   background-color: var(--green-button-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--box-shadow);
 }
 
 .yellow-button {
@@ -233,7 +233,7 @@ li.products-item p {
 
 .yellow-button:active {
   background-color: var(--yellow-button-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--box-shadow);
 }
 
 /* FEATURES */
@@ -433,7 +433,7 @@ li.products-item p {
 
 .filter-button:active {
   background-color: var(--grey-button-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--box-shadow);
   border-radius: 3px;
 }
 
@@ -457,6 +457,6 @@ li.products-item p {
 
 .pagination-page {
   background-color: var(--grey-button-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--box-shadow);
   border-radius: 3px;
 }
