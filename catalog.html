@@ -10,77 +10,85 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <a>
-      <img src="img\nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс" />
-    </a>
-    <nav class="main-navigation">
-      <ul>
-        <li><a class="main-navigation-link" href="index.html" title="Студия Нёрдс">Студия Нёрдс</a></li>
-        <li><a class="main-navigation-link" href="">Клиенты</a></li>
-        <li><a class="main-navigation-link" href="catalog.html" title="Страница магазина">Магазин</a></li>
-        <li><a class="main-navigation-link" href="">Контакты</a></li>
-      </ul>
+  <div class="main-header-wrapper">
+    <header class="main-header">
+      <a class="main-logo">
+        <img src="img\nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс" />
+      </a>
+      <nav class="main-navigation">
+        <ul class="main-navigation-list">
+          <li><a class="main-navigation-link" href="index.html" title="Студия Нёрдс">Студия</a></li>
+          <li><a class="main-navigation-link" href="">Клиенты</a></li>
+          <li><a class="main-navigation-link" href="catalog.html" title="Страница магазина">Магазин</a></li>
+          <li><a class="main-navigation-link" href="">Контакты</a></li>
+        </ul>
+      </nav>
       <a href="" class="main-basket" title="Корзина">Корзина</a>
-    </nav>
-  </header>
-
-  <main>
+    </header>
     <h1 class="main-title">Магазин готовых шаблонов</h1>
-    <section>
+  </div>
+
+
+
+  <main class="main-container">
+    <section class="filter-title">
       <p class="filter-header-type">Стоимость:</p>
       <p class="filter-header-type">Сортировать:</p>
-      <button class="filter-header-buttom" type="button">по цене</button>
-      <button class="filter-header-buttom" type="button">по типу</button>
-      <button class="filter-header-buttom" type="button">по названию</button>
-      <button class="filter-header-buttom" type="button">up</button>
-      <button class="filter-header-buttom" type="button">down</button>
+      <div>
+        <button class="filter-header-buttom" type="button">по цене</button>
+        <button class="filter-header-buttom" type="button">по типу</button>
+        <button class="filter-header-buttom" type="button">по названию</button>
+        <button class="filter-header-buttom" type="button">up</button>
+        <button class="filter-header-buttom" type="button">down</button>
+      </div>
     </section>
 
-    <div>
-      <!-- тут будет фильтр     -->
-      <p class="main-filter-category">Сетка:</p>
-      <ul>
-        <li class="main-filter-item">Адаптивная</li>
-        <li class="main-filter-item">Фиксированная</li>
-        <li class="main-filter-item">Резиновая</li>
-      </ul>
-      <p class="main-filter-category">Особенности:</p>
-      <ul>
-        <li class="main-filter-item">Слайдер</li>
-        <li class="main-filter-item">Блок преимуществ</li>
-        <li class="main-filter-item">Новости</li>
-        <li class="main-filter-item">Галерея</li>
-        <li class="main-filter-item">Корзина</li>
-      </ul>
-      <button class="filter-button" type="button">Показать</button>
+    <div class="filter-grid">
+      <div>
+        <!-- тут будет фильтр     -->
+        <p class="main-filter-category">Сетка:</p>
+        <ul>
+          <li class="main-filter-item">Адаптивная</li>
+          <li class="main-filter-item">Фиксированная</li>
+          <li class="main-filter-item">Резиновая</li>
+        </ul>
+        <p class="main-filter-category">Особенности:</p>
+        <ul>
+          <li class="main-filter-item">Слайдер</li>
+          <li class="main-filter-item">Блок преимуществ</li>
+          <li class="main-filter-item">Новости</li>
+          <li class="main-filter-item">Галерея</li>
+          <li class="main-filter-item">Корзина</li>
+        </ul>
+        <button class="filter-button" type="button">Показать</button>
+      </div>
+
+      <section>
+        <ul class="catalog">
+          <li>
+            <img src="img\img-sedona.png" width="359" height="578" alt="Превью сайта Седона" />
+          </li>
+          <li>
+            <img src="img\img-pink.png" width="359" height="578" alt="Превью сайта Пинк" />
+          </li>
+          <li>
+            <img src="img\img-barbershop.png" width="359" height="578" alt="Превью сайта Бородинский" />
+          </li>
+          <li>
+            <img src="img\img-mishka.png" width="359" height="578" alt="Превью сайта Мишка" />
+          </li>
+          <li>
+            <img src="img\img-aplus.png" width="359" height="578" alt="Превью сайта А+" />
+          </li>
+          <li>
+            <img src="img\img-kvast.png" width="359" height="578" alt="Превью сайта Кваст" />
+          </li>
+        </ul>
+      </section>
     </div>
 
-    <section>
-      <ul>
-        <li>
-          <img src="img\img-sedona.png" width="359" height="578" alt="Превью сайта Седона" />
-        </li>
-        <li>
-          <img src="img\img-pink.png" width="359" height="578" alt="Превью сайта Пинк" />
-        </li>
-        <li>
-          <img src="img\img-barbershop.png" width="359" height="578" alt="Превью сайта Бородинский" />
-        </li>
-        <li>
-          <img src="img\img-mishka.png" width="359" height="578" alt="Превью сайта Мишка" />
-        </li>
-        <li>
-          <img src="img\img-aplus.png" width="359" height="578" alt="Превью сайта А+" />
-        </li>
-        <li>
-          <img src="img\img-kvast.png" width="359" height="578" alt="Превью сайта Кваст" />
-        </li>
-      </ul>
-    </section>
-
     <div>
-      <ul>
+      <ul class="pagination-grid">
         <li><a class="pagination-page" href="">1</a></li>
         <li><a class="pagination-page" href="">2</a></li>
         <li><a class="pagination-page" href="">3</a></li>
@@ -89,26 +97,29 @@
     </div>
   </main>
 
-  <footer>
-    <div>
+  <footer class="footer">
+
+    <div class="footer-map">
       <p class="contacts-company">NЁRDS DESIGN STUDIO</p>
       <p class="contacts-adress">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
       <a class="contacts-phone" href="tel:+78122757575">тел. +7(812)275-75-75</a>
-
-      <button class="contacts-button" type="button">Напишите нам</button>
+      <button class="contacts-button border-clear" type="button">Напишите нам</button>
     </div>
-    <div>
-      <ul>
+
+    <div class="footer-promo">
+      <ul class="footer-social">
         <li><a href=""></a>VK</li>
         <li><a href=""></a>FB</li>
         <li><a href=""></a>INSTA</li>
       </ul>
+      <div>
+        <p class="promo-slogan">Давайте дружить, это выгодно!</p>
+        <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
-    <div>
-      <p class="promo-slogan">Давайте дружить, это выгодно!</p>
-      <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
+
   </footer>
+
 </body>
 
 </html>
