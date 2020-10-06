@@ -52,10 +52,16 @@ a {
   color: var(--black);
 }
 
-img {
+.clear-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 .main-navigation {
   font-size: 16px;
@@ -91,27 +97,40 @@ img {
 .main-header {
   width: 1160px;
   margin: 0 auto;
-  /* padding: 0 10px; */
-  display: grid;
+  padding-top: 49px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+  /* display: grid;
   grid-template-columns: 300px 1fr 255px;
-  background-color: var(--background-header);
+  background-color: var(--background-header); */
 }
 
 .main-logo {
+  display: flex;
   justify-self: center;
+  /* Иначе появляется какой-то паддинг/маргин внизу лого */
 }
 
 .main-navigation-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 26px;
+  margin-left: 202px;
+  width: 437px;
+
+  /* display: grid;
   grid-template-columns: min-content min-content min-content min-content; 
-  gap: 45px;
+  gap: 45px; */
 }
 
 .main-basket {
-  justify-self: center;
+  display: flex;
+  margin-left: 286px;
+  padding-top: 26px;
+  /* justify-self: center; */
 }
 
 .main-container {
@@ -123,9 +142,10 @@ img {
 .slider-wrapper {
   width: 1160px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   background-color: var(--background-header);
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
 }
 
 .visually-hidden {
@@ -141,13 +161,18 @@ img {
   font-weight: 500;
   line-height: 55px;
   color: var(--black);
+  margin: 0px;
+  margin-top: 78px;
 }
 
 .slider-text {
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 24px;  
   color: var(--gunmetal);
+  margin: 0px;
+  margin-top: 25px;
+
 }
 
 .border-clear {
@@ -156,6 +181,12 @@ img {
 }
 
 .slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 50px;
+  margin-top: 38px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -174,14 +205,28 @@ img {
 }
 
 .products-list {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  width: 1100px;
+  gap: 80px;
+  /* display: grid;
   grid-template-columns: 300px 300px 300px;
-  gap: 100px;
+  gap: 100px; */
 }
 
-.products-list {
-  list-style: none;
+
+
+.products-item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
+
+/* можем ли так сделать тут? */
+/* .products-list li:not(:first-child) {
+  margin-left: 80px;
+} */
 
 li.products-item h3 {
   font-size: 24px;
@@ -189,21 +234,33 @@ li.products-item h3 {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--black);
+  margin: 0px;
+  margin-top: 25px;
 }
 
 li.products-item p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  /* для переноса текста, временно или нормально решение? */
+  width: 250px;
   color: var(--gunmetal);
+  margin: 0px;
+  margin-top: 16px;
 }
 
 .products-item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 50px;
+  margin-top: 32px;
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
+  border-radius: 3px;
   cursor: pointer;
-  
 }
 
 .red-button {
@@ -248,11 +305,18 @@ li.products-item p {
 /* FEATURES */
 
 .features-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 300px;
+  display: flex;
+  justify-content: space-between;
+  /* display: grid;
+  grid-template-columns: 1fr 300px; */
+  border-top: 2px solid var(--grey-button);
+  margin-top: 80px;
 }
 
 .features-title {
+  width: 651px;
+  margin: 0px;
+  margin-top: 73px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 400;
@@ -260,6 +324,9 @@ li.products-item p {
 }
 
 .features-text {
+  display: block;
+  margin-top: 32px;
+  width: 646px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -267,6 +334,8 @@ li.products-item p {
 }
 
 .features-left-side h4 {
+  margin: 0px;
+  margin-top: 40px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -279,9 +348,26 @@ li.products-item p {
   line-height: 24px;
   font-weight: 400;
   color: var(--gunmetal);
+  margin-top: 23px;
+}
+
+.numbers-wrapper {
+  display: flex;
+  margin-top: 31px;
+}
+
+.features-right-side {
+  margin-left: 149px;
+}
+
+.features-right-side img {
+  padding-top: 39px;
 }
 
 .features-right-side p {
+  margin: 0px;
+  margin-top: 30px;
+  padding-left: 10px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -304,9 +390,22 @@ li.products-item p {
 
 /* пока добавил еще достилизую */
 .portfolio {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 73px;
+  border-top: 2px solid var(--grey-button);
+  border-bottom: 2px solid var(--grey-button);
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+}
+
+/* временно */
+.portfolio li {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
 }
 
 /* FOOTER */
