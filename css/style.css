@@ -78,6 +78,25 @@ a {
   text-transform: uppercase;
 }
 
+.main-basket::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 33px;
+  left: -40px;
+  /* background-image: url("img\cart-icon.png"); */
+  /* не получается подцепить иконку, туплю */
+  background-color: yellow;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.basket,
+.main-basket {
+  position: relative;
+}
+
 .main-navigation-link:hover,
 .main-basket:hover {
   color: var(--red-hover);
@@ -95,16 +114,13 @@ a {
 }
 
 .main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
   padding-top: 49px;
-  display: flex;
-  flex-wrap: wrap;
-  
-  
-  /* display: grid;
-  grid-template-columns: 300px 1fr 255px;
-  background-color: var(--background-header); */
+
 }
 
 .main-logo {
@@ -144,8 +160,6 @@ a {
   margin: 0 auto;
   display: flex;
   background-color: var(--background-header);
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
 }
 
 .visually-hidden {
@@ -157,6 +171,7 @@ a {
 }
 
 .slider-title {
+  font-family: roboto;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -166,6 +181,7 @@ a {
 }
 
 .slider-text {
+  width: 345px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;  
@@ -190,6 +206,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  text-transform: uppercase;
   color: var(--white);
   background-color: var(--red-button);
   border-radius: 3px;
@@ -209,13 +226,7 @@ a {
   flex-wrap: wrap;
   margin-top: 80px;
   width: 1100px;
-  gap: 80px;
-  /* display: grid;
-  grid-template-columns: 300px 300px 300px;
-  gap: 100px; */
 }
-
-
 
 .products-item {
   display: flex;
@@ -223,12 +234,11 @@ a {
   width: 300px;
 }
 
-/* можем ли так сделать тут? */
-/* .products-list li:not(:first-child) {
-  margin-left: 80px;
-} */
+.products-list li:not(:first-child) {
+  margin-left: 100px;
+}
 
-li.products-item h3 {
+.products-item h3 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -238,15 +248,19 @@ li.products-item h3 {
   margin-top: 25px;
 }
 
-li.products-item p {
+.products-item p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  /* для переноса текста, временно или нормально решение? */
   width: 250px;
   color: var(--gunmetal);
   margin: 0px;
   margin-top: 16px;
+}
+
+/* никак не мог просто по классу выбрать селектор, не пойму в чем дело, пока решил так */
+.products-item .p-wrap {
+  width: 234px;
 }
 
 .products-item-button {
@@ -258,6 +272,7 @@ li.products-item p {
   margin-top: 32px;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
   color: var(--white);
   border-radius: 3px;
   cursor: pointer;
@@ -307,8 +322,6 @@ li.products-item p {
 .features-wrapper {
   display: flex;
   justify-content: space-between;
-  /* display: grid;
-  grid-template-columns: 1fr 300px; */
   border-top: 2px solid var(--grey-button);
   margin-top: 80px;
 }
@@ -319,12 +332,12 @@ li.products-item p {
   margin-top: 73px;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--black);
 }
 
 .features-text {
-  display: block;
+  margin: 0px;
   margin-top: 32px;
   width: 646px;
   font-size: 16px;
@@ -408,6 +421,10 @@ li.products-item p {
   
 }
 
+.map {
+  margin-top: 80px;
+}
+
 /* FOOTER */
 
 .footer {
@@ -417,12 +434,21 @@ li.products-item p {
 }
 
 .footer-promo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  margin-top: 68px;
 }
 
 .footer-social {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 139px;
 }
 
 .contacts-company {
@@ -453,9 +479,12 @@ li.products-item p {
   font-weight: 500;
   color: var(--white);
   background-color: var(--red-button);
+  cursor: pointer;
 }
 
 .promo-slogan {
+  margin: 0px;
+  padding: 0px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -463,6 +492,8 @@ li.products-item p {
 }
 
 .promo-text {
+  margin-top: 10px;
+  padding: 0px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;

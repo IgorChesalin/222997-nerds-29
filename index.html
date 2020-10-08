@@ -4,10 +4,15 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" /> -->
   <link href="normalize.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
 </head>
+
+
 
 <body>
   <div class="main-header-wrapper">
@@ -23,7 +28,9 @@
           <li><a class="main-navigation-link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <a href="" class="main-basket" title="Корзина">Корзина</a>
+      <div class="basket">
+        <a href="" class="main-basket" title="Корзина">Корзина</a>
+      </div>
     </header>
 
     <div class="slider-wrapper">
@@ -31,10 +38,10 @@
         <p class="slider-title">Долго, дорого, скрупулезно.</p>
         <!-- можно ли тут использовать бр? или разбить текст на 2 строки -->
         <p class="slider-text">
-          Математически выверенный дизайн<br> для вашего сайта или мобильного
+          Математически выверенный дизайн для вашего сайта или мобильного
           приложения.
         </p>
-        <a href="" class="slider-button">УЗНАТЬ БОЛЬШЕ</a>
+        <a href="" class="slider-button">Узнать больше</a>
       </div>
       <div>
         <img src="img\index-slide-1.png" width="760" height="431" alt="картинка слайдера 1" />
@@ -53,21 +60,21 @@
           <img src="img\illustration-1.png" width="300" height="146" alt="картинка сайты" />
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <button class="products-item-button red-button border-clear" type="button">ЗАКАЗАТЬ</button>
+          <button class="products-item-button red-button border-clear" type="button">Заказать</button>
         </li>
 
         <li class="products-item">
           <img src="img\illustration-2.png" width="300" height="146" alt="картинка приложения" />
           <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button class="products-item-button green-button border-clear" type="button">ЗАКАЗАТЬ</button>
+          <p class="p-wrap">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <button class="products-item-button green-button border-clear" type="button">Заказать</button>
         </li>
 
         <li class="products-item">
           <img src="img\illustration-3.png" width="300" height="146" alt="картинка презентации" />
           <h3>Презентации</h3>
-          <p>Вы даже не представляете насколько вы изумительны!</p>
-          <button class="products-item-button yellow-button border-clear" type="button">ЗАКАЗАТЬ</button>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <button class="products-item-button yellow-button border-clear" type="button">Заказать</button>
         </li>
       </ul>
     </section>
@@ -140,24 +147,27 @@
       </ul>
 
     </section>
-  </main>
-
-  <footer class="footer">
-
-    <div class="footer-map">
-      <p class="contacts-company">NЁRDS DESIGN STUDIO</p>
-      <p class="contacts-adress">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
-      <a class="contacts-phone" href="tel:+78122757575">тел. +7(812)275-75-75</a>
-      <button class="contacts-button border-clear" type="button">Напишите нам</button>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300338!2d30.320858716474067!3d59.93871916905372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602170137337!5m2!1sru!2sru"
+        width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
     </div>
+  </main>
+  <footer class="footer">
+    <p class="contacts-company">NЁRDS DESIGN STUDIO</p>
+    <p class="contacts-adress">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+    <a class="contacts-phone" href="tel:+78122757575">тел. +7(812)275-75-75</a>
+    <button class="contacts-button border-clear" type="button">Напишите нам</button>
+
 
     <div class="footer-promo">
-      <ul class="footer-social">
+      <ul class="footer-social clear-list">
         <li><a href=""></a>VK</li>
         <li><a href=""></a>FB</li>
         <li><a href=""></a>INSTA</li>
       </ul>
-      <div>
+      <div class="footer-right">
         <p class="promo-slogan">Давайте дружить, это выгодно!</p>
         <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
