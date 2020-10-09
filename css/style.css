@@ -451,6 +451,11 @@ a {
   margin-left: 139px;
 }
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts-company {
   font-size: 18px;
   line-height: 30px;
@@ -474,6 +479,8 @@ a {
 }
 
 .contacts-button {
+  width: 219px;
+  height: 50px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -503,19 +510,26 @@ a {
 /* CATALOG */
 
 .filter-title {
-  display: grid;  
-  grid-template-columns: 1fr 1fr max-content; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.filter-grid {
-  display: grid;
-  grid-template-columns: min-content 1fr;
+.filter-wrap {
+  display: flex;
+  justify-content: space-between;
+  /* display: grid;
+  grid-template-columns: min-content 1fr; */
+}
+
+.catalog-wrap {
+  margin-left: 141px;
 }
 
 .catalog {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 41px;
 }
 
 .main-title {
@@ -534,6 +548,14 @@ a {
   color: var(--black);
 }
 
+.filter-header-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* временно */
+  gap: 25px;
+}
+
 .filter-header-button {
   padding: 0;
   border: none;
@@ -544,6 +566,7 @@ a {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  text-transform: uppercase;
   color: var(--black-03);
   cursor: pointer; 
 }
@@ -572,12 +595,16 @@ a {
 
 /* кнопка ПОЗАКАТЬ */
 .filter-button {
+  width: 260px;
+  height: 50px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  text-transform: uppercase;
   color: var(--black);
   background-color: var(--grey-button);
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .filter-button {
@@ -597,10 +624,10 @@ a {
 /* Пагинация */
 
 .pagination-grid {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;  
 }
 
 .pagination-page {
