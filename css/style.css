@@ -32,6 +32,11 @@
   --grey-button-active: #d5d5d5;
 
   --box-shadow: rgba(0, 1, 1, 0.1);
+
+  --grey-social-background: #E1E1E1;
+  --red-social-background: #E74246;
+  --red-social-background-active: #D7373B;
+  
 }
 
 /* Global */
@@ -86,11 +91,8 @@ a {
   height: 15px;
   top: 33px;
   left: -40px;
-  /* background-image: url("img\cart-icon.png"); */
-  /* не получается подцепить иконку, туплю */
-  background-color: yellow;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("/img/cart-icon.png");
+  background-repeat: no-repeat;  
 }
 
 .basket,
@@ -137,10 +139,6 @@ a {
   padding-top: 26px;
   margin-left: 202px;
   width: 437px;
-
-  /* display: grid;
-  grid-template-columns: min-content min-content min-content min-content; 
-  gap: 45px; */
 }
 
 .main-basket {
@@ -182,13 +180,12 @@ a {
 }
 
 .slider-text {
-  width: 345px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;  
   color: var(--gunmetal);
   margin: 0px;
-  margin-top: 25px;
+  margin-top: 27px;
 
 }
 
@@ -203,7 +200,7 @@ a {
   justify-content: center;
   width: 240px;
   height: 50px;
-  margin-top: 38px;
+  margin-top: 40px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -358,11 +355,23 @@ a {
 }
 
 .features-list li {
+  position: relative;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--gunmetal);
   margin-top: 23px;
+  margin-left: 35px;
+}
+
+.features-list li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 12px;
+  left: -34px;
+  background-color: red;
 }
 
 .numbers-wrapper {
@@ -406,55 +415,128 @@ a {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-top: 73px;
   border-top: 2px solid var(--grey-button);
   border-bottom: 2px solid var(--grey-button);
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr); */
 }
 
 /* временно */
 .portfolio li {
   padding-top: 40px;
   padding-bottom: 40px;
-  
+  opacity: 0.2;
 }
 
-.map {
-  margin-top: 80px;
+.portfolio li:hover {
+  opacity: 1;
+}
+
+.portfolio li:active {
+  opacity: 0.1;
 }
 
 /* FOOTER */
 
 .footer {
-  width: 1160px;
+  width: 1440px;
   margin: 0 auto;
   padding: 0 10px;
+  margin-top: 80px;
+}
+
+.footer-map {
+  position: relative;
+}
+
+.footer-map::before {
+  content: "";
+  position: absolute;
+  width: 231px;
+  height: 190px;
+  top: 86px;
+  left: 822px;
+  background-image: url("/img/map-marker.png");
+  background-repeat: no-repeat;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 318px;
+  height: 308px;
+  background-color: var(--white);
+  position: absolute;
+  top: 54px;
+  left: 140px;
+  
 }
 
 .footer-promo {
   display: flex;
   margin-top: 68px;
+  margin-bottom: 200px;
 }
 
 .footer-social {
   display: flex;
-  flex-wrap: wrap;
+  margin-left: 140px;
   gap: 9px;
-  align-items: center;
+}
+
+
+.social-link {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: var(--grey-social-background);
+  border-radius: 100%;
+}
+
+.social-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.social-link-vk::before {
+  background: url("/img/vk-icon.svg") no-repeat center;
+  background-size: 26px auto;
+}
+
+.social-link-fb::before {
+  background: url("/img/fb-icon.svg") no-repeat center;
+  background-size: 12px auto;
+}
+
+.social-link-insta::before {
+  background: url("/img/insta-icon.svg") no-repeat center;
+  background-size: 21px auto;
+}
+
+.social-link:hover {
+  background-color: var(--red-social-background);
+}
+
+.social-link:active {
+  background-color: var(--red-social-background-active);
+}
+
+.social-link:active::before {
+  opacity: 0.3;
 }
 
 .footer-right {
   display: flex;
   flex-direction: column;
   margin-left: 139px;
-}
-
-.contacts {
-  display: flex;
-  flex-direction: column;
 }
 
 .contacts-company {
@@ -466,6 +548,8 @@ a {
 }
 
 .contacts-adress {
+  width: 230px;
+  text-align: center;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -485,9 +569,12 @@ a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  text-transform: uppercase;
   color: var(--white);
   background-color: var(--red-button);
   cursor: pointer;
+  border-radius: 3px;
+  margin-top: 37px;
 }
 
 .promo-slogan {
