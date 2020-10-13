@@ -91,7 +91,7 @@ a {
   height: 15px;
   top: 33px;
   left: -40px;
-  background-image: url("/img/cart-icon.png");
+  background-image: url("../img/cart-icon.png");
   background-repeat: no-repeat;  
 }
 
@@ -457,7 +457,7 @@ a {
   height: 190px;
   top: 86px;
   left: 822px;
-  background-image: url("/img/map-marker.png");
+  background-image: url("../img/map-marker.png");
   background-repeat: no-repeat;
 }
 
@@ -507,17 +507,17 @@ a {
 }
 
 .social-link-vk::before {
-  background: url("/img/vk-icon.svg") no-repeat center;
+  background: url("../img/vk-icon.svg") no-repeat center;
   background-size: 26px auto;
 }
 
 .social-link-fb::before {
-  background: url("/img/fb-icon.svg") no-repeat center;
+  background: url("../img/fb-icon.svg") no-repeat center;
   background-size: 12px auto;
 }
 
 .social-link-insta::before {
-  background: url("/img/insta-icon.svg") no-repeat center;
+  background: url("../img/insta-icon.svg") no-repeat center;
   background-size: 21px auto;
 }
 
