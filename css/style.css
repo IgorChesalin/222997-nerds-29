@@ -450,6 +450,7 @@ a {
   position: relative;
   background-image: url("../img/map.png");
   z-index: 1;
+  height: 416px;
 }
 
 .footer-map::before {
@@ -461,7 +462,6 @@ a {
   left: 822px;
   background-image: url("../img/map-marker.png");
   background-repeat: no-repeat;
-  z-index: 2;
 }
 
 .footer-contacts {
@@ -742,3 +742,4 @@ a {
   box-shadow: inset 0px 3px 0px var(--box-shadow);
   border-radius: 3px;
 }
+
