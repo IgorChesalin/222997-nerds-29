@@ -4,7 +4,9 @@
   /*названия цветов по coolors.co*/
   --black: #000000;
   --black-03: rgba(0, 0, 0, 0.3);
+  --black-04: rgba(0, 0, 0, 0.4);
   --black-06: rgba(0, 0, 0, 0.6);
+  
   --gunmetal: #283136;
   --white: #ffffff;
   --dim-gray: #666666;
@@ -37,6 +39,7 @@
   --red-social-background: #E74246;
   --red-social-background-active: #D7373B;
   
+  --grey-input-border: #D7DCDE;
 }
 
 /* Global */
@@ -743,3 +746,104 @@ a {
   border-radius: 3px;
 }
 
+/* POPUP */
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  height: 590px;
+  box-shadow: 0px 20px 40px var(--black-04);
+}
+
+.modal-content h2 {
+  position: relative;
+  margin: 0px;
+  padding: 0xp;
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
+  color: var(--black);
+  padding-top: 53px;
+  padding-left: 100px;
+}
+
+.modal-content h2::before {
+
+}
+
+.Form-contacts {
+  display: flex;
+  width: 760px;
+  margin-left: 100px;
+  margin-top: 37px;
+}
+
+.Form-name,
+.Form-email  {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 77px;
+}
+
+.Form-email {
+  margin-left: 40px;
+}
+
+.Form-name label,
+.Form-email label,
+.Form-letter label  {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.Form-letter  {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--black);
+  
+}
+
+.Form-name input,
+.Form-email input  {
+  display: block;
+  margin-top: 9px;
+  height: 50px;
+  border: 2px solid var(--grey-input-border);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--onyx);
+  opacity: 0.5;
+}
+
+.Form-letter {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: 34px;
+  width: 760px;
+}
+
+.Form-letter textarea {
+  display: block;
+  margin-top: 9px;
+  height: 118px;
+  border: 2px solid var(--grey-input-border);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--onyx);
+  opacity: 0.5;
+  padding-left: 16px;
+  padding-top: 16px;
+  
+}
+
+.form-button {
+  margin-left: 100px;
+}
