@@ -612,8 +612,6 @@ a {
 .filter-wrap {
   display: flex;
   justify-content: space-between;
-  /* display: grid;
-  grid-template-columns: min-content 1fr; */
 }
 
 .catalog-wrap {
@@ -749,6 +747,8 @@ a {
 /* POPUP */
 
 .modal-content {
+  margin:0 auto;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   width: 960px;
@@ -756,7 +756,11 @@ a {
   box-shadow: 0px 20px 40px var(--black-04);
 }
 
-.modal-content h2 {
+.Form-title {
+  display: flex;
+}
+
+.Form-title h2 {
   position: relative;
   margin: 0px;
   padding: 0xp;
@@ -768,8 +772,23 @@ a {
   padding-left: 100px;
 }
 
-.modal-content h2::before {
+.close-bnt {
+  width: 21px;
+  height: 21px;
+  margin-top: 69px;
+  margin-left: 437px;
+  background-color: var(--white);
+  background-image: url("../img/close-cross.png");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
 
+.close-bnt:hover {
+  opacity: 1;  
+}
+
+.close-bnt:active {
+  opacity: 0.1;  
 }
 
 .Form-contacts {
@@ -812,6 +831,7 @@ a {
 .Form-email input  {
   display: block;
   margin-top: 9px;
+  padding-left: 16px;  
   height: 50px;
   border: 2px solid var(--grey-input-border);
   font-size: 16px;
@@ -830,10 +850,12 @@ a {
 }
 
 .Form-letter textarea {
+  
   display: block;
   margin-top: 9px;
   height: 118px;
   border: 2px solid var(--grey-input-border);
+  font-family: Roboto;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -841,9 +863,22 @@ a {
   opacity: 0.5;
   padding-left: 16px;
   padding-top: 16px;
-  
+   
 }
 
-.form-button {
+.form-button-send {
+  display: flex;
   margin-left: 100px;
+  margin-top: 47px;
+  width: 259px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: var(--red-button);
+  color: var(--white);
+  text-transform: uppercase;
+  padding-top: 17px;
+  padding-left: 83px;
+  border-radius: 3px;
 }
