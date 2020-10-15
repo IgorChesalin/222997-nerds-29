@@ -746,6 +746,10 @@ a {
 
 /* POPUP */
 
+/* .form-name input:invalid {
+  border-color: red;
+} */
+
 .modal-content {
   margin:0 auto;
   margin-bottom: 100px;
@@ -882,3 +886,13 @@ a {
   padding-left: 83px;
   border-radius: 3px;
 }
+
+
+
+/* input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+} */
