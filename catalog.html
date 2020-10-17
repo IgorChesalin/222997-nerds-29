@@ -28,59 +28,131 @@
     <h1 class="main-title">Магазин готовых шаблонов</h1>
   </div>
 
-
-
   <main class="main-container">
     <section class="filter-title">
+
       <p class="filter-header-type">Стоимость:</p>
       <p class="filter-header-type">Сортировать:</p>
+
       <div class="filter-header-buttons">
         <button class="filter-header-button" type="button">по цене</button>
         <button class="filter-header-button" type="button">по типу</button>
-        <button class="filter-header-button" type="button"> названию</button>
-        <button class="filter-header-button" type="button">up</button>
-        <button class="filter-header-button" type="button">down</button>
+        <button class="filter-header-button" type="button">по названию</button>
+        <button class="filter-header-button button-down" type="button">d</button>
+        <button class="filter-header-button button-up" type="button">u</button>
       </div>
     </section>
 
     <div class="filter-wrap">
+
       <div class="filter">
-        <!-- тут будет фильтр     -->
-        <p class="main-filter-category">Сетка:</p>
-        <ul>
-          <li class="main-filter-item">Адаптивная</li>
-          <li class="main-filter-item">Фиксированная</li>
-          <li class="main-filter-item">Резиновая</li>
-        </ul>
-        <p class="main-filter-category">Особенности:</p>
-        <ul>
-          <li class="main-filter-item">Слайдер</li>
-          <li class="main-filter-item">Блок преимуществ</li>
-          <li class="main-filter-item">Новости</li>
-          <li class="main-filter-item">Галерея</li>
-          <li class="main-filter-item">Корзина</li>
-        </ul>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-item">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="15000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+
+
+          <fieldset class="filter-grid">
+            <legend>Сетка:</legend>
+
+            <ul class="clear-list">
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="adaptive"
+                  id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="fixed"
+                  id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="flexible"
+                  id="filter-flexible" checked>
+                <label for="filter-flexible">Резиновая</label>
+              </li>
+            </ul>
+
+          </fieldset>
+          <fieldset class="filter-features">
+            <legend>Особенности:</legend>
+            <ul class="clear-list">
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
+                  value="shaving" id="filter-shave">
+                <label for="filter-shave">Слайдер</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
+                  value="hair-care" id="filter-care" checked>
+                <label for="filter-care">Блок преимуществ</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
+                  value="accessories" id="filter-accessories">
+                <label for="filter-accessories">Новости</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
+                  value="accessories" id="filter-accessories">
+                <label for="filter-accessories">Галерея</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
+                  value="accessories" id="filter-accessories">
+                <label for="filter-accessories">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+
         <button class="filter-button border-clear" type="button">Показать</button>
       </div>
 
       <section class="catalog-wrap">
         <ul class="catalog clear-list">
           <li>
+            <div class="img-top-panel"></div>
             <img src="img\img-sedona.png" width="359" height="578" alt="Превью сайта Седона" />
           </li>
           <li>
+            <div class="img-top-panel"></div>
             <img src="img\img-pink.png" width="359" height="578" alt="Превью сайта Пинк" />
           </li>
           <li>
+            <div class="img-top-panel"></div>
             <img src="img\img-barbershop.png" width="359" height="578" alt="Превью сайта Бородинский" />
           </li>
           <li>
+            <div class="img-top-panel"></div>
             <img src="img\img-mishka.png" width="359" height="578" alt="Превью сайта Мишка" />
           </li>
           <li>
+            <div class="img-top-panel"></div>
             <img src="img\img-aplus.png" width="359" height="578" alt="Превью сайта А+" />
           </li>
           <li>
+            <div class="img-top-panel"></div>
             <img src="img\img-kvast.png" width="359" height="578" alt="Превью сайта Кваст" />
           </li>
         </ul>
@@ -95,28 +167,28 @@
         <li><a class="pagination-page" href="">Следующая</a></li>
       </ul>
     </div>
-
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300338!2d30.320858716474067!3d59.93871916905372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602170137337!5m2!1sru!2sru"
-        width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
-    </div>
-
-    <div class="contacts">
-      <p class="contacts-company">NЁRDS DESIGN STUDIO</p>
-      <p class="contacts-adress">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
-      <a class="contacts-phone" href="tel:+78122757575">тел. +7(812)275-75-75</a>
-      <button class="contacts-button border-clear" type="button">Напишите нам</button>
-    </div>
   </main>
 
   <footer class="footer">
+    <div class="footer-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300338!2d30.320858716474067!3d59.93871916905372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602170137337!5m2!1sru!2sru"
+        width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+
+      <div class="footer-contacts">
+        <p class="contacts-company">NЁRDS DESIGN STUDIO</p>
+        <p class="contacts-adress">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+        <a class="contacts-phone" href="tel:+78122757575">тел. +7(812)275-75-75</a>
+        <button class="contacts-button border-clear" type="button">Напишите нам</button>
+      </div>
+    </div>
+
     <div class="footer-promo">
       <ul class="footer-social clear-list">
-        <li><a href=""></a>VK</li>
-        <li><a href=""></a>FB</li>
-        <li><a href=""></a>INSTA</li>
+        <li><a class="social-link social-link-vk" href="wwww.vk.com"></a></li>
+        <li><a class="social-link social-link-fb" href="www.facebook.com"></a></li>
+        <li><a class="social-link social-link-insta" href="www.instagram.com"></a></li>
       </ul>
       <div class="footer-right">
         <p class="promo-slogan">Давайте дружить, это выгодно!</p>

@@ -40,6 +40,12 @@
   --red-social-background-active: #D7373B;
   
   --grey-input-border: #D7DCDE;
+
+  --grey-bg-filter: #f1f1f1;
+
+  --grey-bg-toggle: #ababab;
+  --grey-shadow-toggle: #cfcfcf;
+  --grey-checkbox: #4d4d4d;
 }
 
 /* Global */
@@ -117,6 +123,7 @@ a {
 
 .main-header-wrapper {
     background-color: var(--background-header);
+    height: 355px;
 }
 
 .main-header {
@@ -414,7 +421,12 @@ a {
   color: var(--black);
 }
 
-/* пока добавил еще достилизую */
+.percent {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -605,8 +617,12 @@ a {
 
 .filter-title {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-transform: uppercase;
+  margin-top: 37px;
+}
+
+.filter-title p:nth-child(2) {
+  margin-left: 285px;
 }
 
 .filter-wrap {
@@ -614,6 +630,180 @@ a {
   justify-content: space-between;
 }
 
+/* фильтр с ползунками */
+
+.range-filter {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--black);
+  width: 260px;
+  margin-top: 30px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--grey-bg-filter);
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--grey-input-border);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--green-button);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--white);
+  background-color: var(--grey-bg-toggle);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--grey-shadow-toggle);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: var(--gunmetal);
+  border: none;
+  border-radius: 5px;
+  background: var(--grey-bg-filter);
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
+/* чекбоксы */
+/* 1 */
+.filter-grid {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-top: 54px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.filter-grid legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filter-grid ul {
+  margin-top: 14px;
+  margin-left: 36px;
+}
+
+.filter-option {
+  margin-bottom: 21px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  color: var(--gunmetal);
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -2px;
+  width: 16px;
+  height: 16px;
+  border: 4px solid var(--grey-checkbox);  
+  border-radius: 100%;
+  box-shadow: inset 0 0 0 4px var(--white);
+  opacity: 0.4;  
+}
+
+.filter-input-checkbox:hover + label::before {
+  opacity: 1;  
+}
+
+.filter-input-checkbox:checked + label::before {
+  background-color:#000000;
+}
+
+/* 2 */
+
+.filter-features {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.filter-features legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filter-features ul {
+  margin-left: 36px;
+  margin-top: 17px;
+}
+
+/* --- */
 .catalog-wrap {
   margin-left: 141px;
 }
@@ -621,31 +811,59 @@ a {
 .catalog {
   display: flex;
   flex-wrap: wrap;
-  gap: 41px;
+  gap: 39px;
+  margin-top: 30px;
+}
+
+.img-top-panel {
+  display: block;
+  width: 360px;
+  height: 40px;
+  background-color: var(--grey-checkbox);
+  opacity: 0.12;
+  border-radius: 3px;
+  
 }
 
 .main-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin-top: 78px;
   color: var(--black);
   text-align: center;
   background-color: var(--background-header);
 }
 
 .filter-header-type {
+  display: block;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: var(--black);
+ 
 }
 
 .filter-header-buttons {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* временно */
-  gap: 25px;
+  position: relative;
+  margin-left: 266px;  
+}
+
+.filter-header-buttons button:nth-child(2) {
+  margin-left: 25px;
+}
+
+.filter-header-buttons button:nth-child(3) {
+  margin-left: 26px;
+}
+
+.filter-header-buttons button:nth-child(4) {
+  margin-left: 47px;
+}
+
+.filter-header-buttons button:nth-child(5) {
+  margin-left: 18px;
 }
 
 .filter-header-button {
@@ -697,6 +915,7 @@ a {
   background-color: var(--grey-button);
   cursor: pointer;
   border-radius: 3px;
+  margin-top: 30px;
 }
 
 .filter-button {
@@ -760,11 +979,11 @@ a {
   box-shadow: 0px 20px 40px var(--black-04);
 }
 
-.Form-title {
+.form-title {
   display: flex;
 }
 
-.Form-title h2 {
+.form-title h2 {
   position: relative;
   margin: 0px;
   padding: 0xp;
@@ -795,35 +1014,35 @@ a {
   opacity: 0.1;  
 }
 
-.Form-contacts {
+.form-contacts {
   display: flex;
   width: 760px;
   margin-left: 100px;
   margin-top: 37px;
 }
 
-.Form-name,
-.Form-email  {
+.form-name,
+.form-email  {
   display: flex;
   flex-direction: column;
   width: 360px;
   height: 77px;
 }
 
-.Form-email {
+.form-email {
   margin-left: 40px;
 }
 
-.Form-name label,
-.Form-email label,
-.Form-letter label  {
+.form-name label,
+.form-email label,
+.form-letter label  {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: var(--black);
 }
 
-.Form-letter  {
+.form-letter  {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -831,8 +1050,8 @@ a {
   
 }
 
-.Form-name input,
-.Form-email input  {
+.form-name input,
+.form-email input  {
   display: block;
   margin-top: 9px;
   padding-left: 16px;  
@@ -845,7 +1064,7 @@ a {
   opacity: 0.5;
 }
 
-.Form-letter {
+.form-letter {
   display: flex;
   flex-direction: column;
   margin-left: 100px;
@@ -853,7 +1072,7 @@ a {
   width: 760px;
 }
 
-.Form-letter textarea {
+.form-letter textarea {
   
   display: block;
   margin-top: 9px;
@@ -867,7 +1086,6 @@ a {
   opacity: 0.5;
   padding-left: 16px;
   padding-top: 16px;
-   
 }
 
 .form-button-send {
@@ -888,7 +1106,6 @@ a {
 }
 
 
-
 /* input:valid {
   border-color: green;
 }
@@ -896,3 +1113,4 @@ a {
 input:invalid {
   border-color: red;
 } */
+
