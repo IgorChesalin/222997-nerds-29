@@ -38,8 +38,8 @@
         <button class="filter-header-button" type="button">по цене</button>
         <button class="filter-header-button" type="button">по типу</button>
         <button class="filter-header-button" type="button">по названию</button>
-        <button class="filter-header-button button-down" type="button">d</button>
-        <button class="filter-header-button button-up" type="button">u</button>
+        <button class="filter-header-button button-down" type="button"></button>
+        <button class="filter-header-button button-up" type="button"></button>
       </div>
     </section>
 
@@ -59,84 +59,72 @@
 
               <div class="price-controls">
                 <label class="min-price">
-                  от <input type="number" name="min-price" value="0">
+                  от <input type="text" name="min-price" value="0">
                 </label>
                 <label class="max-price">
-                  до <input type="number" name="max-price" value="15000">
+                  до <input type="text" name="max-price" value="15 000">
                 </label>
               </div>
             </div>
           </fieldset>
 
-
-
           <fieldset class="filter-grid">
             <legend>Сетка:</legend>
-
             <ul class="clear-list">
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="adaptive"
-                  id="filter-adaptive" checked>
+              <li class="filter-option">
+                <input class="visually-hidden filter-grid-checkbox" type="checkbox" name="grid" id="filter-adaptive"
+                  checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
-
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="fixed"
-                  id="filter-fixed">
+              <li class="filter-option">
+                <input class="visually-hidden filter-grid-checkbox" type="checkbox" name="grid" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
-
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="flexible"
-                  id="filter-flexible" checked>
+              <li class="filter-option">
+                <input class="visually-hidden filter-grid-checkbox" type="checkbox" name="grid" id="filter-flexible">
                 <label for="filter-flexible">Резиновая</label>
               </li>
             </ul>
-
           </fieldset>
+
           <fieldset class="filter-features">
             <legend>Особенности:</legend>
+
             <ul class="clear-list">
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
-                  value="shaving" id="filter-shave">
-                <label for="filter-shave">Слайдер</label>
+              <li class="filter-option">
+                <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="slider"
+                  checked>
+                <label for="slider">Слайдер</label>
               </li>
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
-                  value="hair-care" id="filter-care" checked>
-                <label for="filter-care">Блок преимуществ</label>
+              <li class="filter-option">
+                <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="advantages">
+                <label for="advantages">Блок преимуществ</label>
               </li>
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
-                  value="accessories" id="filter-accessories">
-                <label for="filter-accessories">Новости</label>
+              <li class="filter-option">
+                <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="news"
+                  checked>
+                <label for="news">Новости</label>
               </li>
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
-                  value="accessories" id="filter-accessories">
-                <label for="filter-accessories">Галерея</label>
+              <li class="filter-option">
+                <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="galery">
+                <label for="galery">Галерея</label>
               </li>
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
-                  value="accessories" id="filter-accessories">
-                <label for="filter-accessories">Корзина</label>
+              <li class="filter-option">
+                <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="basket">
+                <label for="basket">Корзина</label>
               </li>
             </ul>
+            <button class="filter-button border-clear" type="button">Показать</button>
           </fieldset>
         </form>
-
-        <button class="filter-button border-clear" type="button">Показать</button>
       </div>
 
       <section class="catalog-wrap">
         <ul class="catalog clear-list">
           <li>
-
             <div class="catalog-item-wrap">
               <div class="img-top-panel"></div>
               <img src="img\img-sedona.png" width="359" height="578" alt="Превью сайта Седона" />
-
               <div class="item-description">
                 <a class="item-link" href="blank.html">
                   <h3 class="item-title">Sedona</h3>
@@ -145,7 +133,6 @@
                 <button class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</button>
               </div>
             </div>
-
           </li>
           <li>
             <div class="img-top-panel"></div>
@@ -171,12 +158,12 @@
       </section>
     </div>
 
-    <div>
-      <ul class="pagination-grid clear-list">
+    <div class="pagination-grid">
+      <ul class="pagination-list clear-list">
         <li><a class="pagination-page" href="">1</a></li>
         <li><a class="pagination-page" href="">2</a></li>
         <li><a class="pagination-page" href="">3</a></li>
-        <li><a class="pagination-page" href="">Следующая</a></li>
+        <li><a class="pagination-page pagination-page-last" href="">Следующая</a></li>
       </ul>
     </div>
   </main>
