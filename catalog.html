@@ -248,10 +248,10 @@
 
   <footer class="footer">
     <div class="footer-map">
-      <iframe
+      <!-- <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300338!2d30.320858716474067!3d59.93871916905372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602170137337!5m2!1sru!2sru"
         width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-      </iframe>
+      </iframe> -->
 
       <div class="footer-contacts">
         <p class="contacts-company">NЁRDS DESIGN STUDIO</p>
@@ -275,5 +275,37 @@
   </footer>
 
 </body>
+
+
+<div class="modal-content">
+
+  <div class="form-title">
+    <h2>Напишите нам</h2>
+    <button class="close-bnt border-clear"></button>
+  </div>
+
+  <form action="">
+    <div class="form-contacts">
+      <div class="form-name">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия"
+          pattern="[A-Za-zА-Яа-яЁё]*?\s[A-Za-zА-Яа-яЁё]*" required>
+      </div>
+      <div class="form-email">
+        <label for="email">Ваш email:</label>
+        <input type="text" name="email" id="email" placeholder="email@example.com"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+      </div>
+    </div>
+
+    <div class="form-letter">
+      <label for="letter">Текст письма:</label>
+      <textarea name="letter" id="letter" rows="4" placeholder="В свободной форме" required></textarea>
+    </div>
+
+    <button class="form-button-send red-button border-clear" type="submit">Отправить</button>
+  </form>
+
+</div>
 
 </html>

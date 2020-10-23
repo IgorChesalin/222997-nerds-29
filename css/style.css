@@ -74,11 +74,6 @@ a {
   list-style: none;
 }
 
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
-
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
@@ -123,8 +118,7 @@ a {
 /* MAIN index+catalog */
 
 .main-header-wrapper {
-    background-color: var(--background-header);
-    height: 355px;
+  background-color: var(--background-header);
 }
 
 .main-header {
@@ -160,6 +154,7 @@ a {
 }
 
 .main-container {
+  
   width: 1160px;
   margin: 0 auto;
   /* padding: 0 10px;   */
@@ -938,13 +933,14 @@ a {
 
 
 .main-title {
+  display: block;
+  height: 163px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   margin-top: 78px;
   color: var(--black);
   text-align: center;
-  background-color: var(--background-header);
 }
 
 .filter-header-type {
@@ -991,13 +987,14 @@ a {
   text-transform: uppercase;
   color: var(--black-03);
   cursor: pointer; 
+  outline: none;
 }
 
-.filter-header button:hover {
+.filter-header-button:hover {
   color: var(--black-06);
 }
 
-.filter-header button:active {
+.filter-header-button:active {
   color: var(--black);
 }
 
@@ -1159,6 +1156,7 @@ a {
   background-image: url("../img/close-cross.png");
   background-repeat: no-repeat;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .close-bnt:hover {
@@ -1258,6 +1256,7 @@ a {
   padding-top: 17px;
   padding-left: 83px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 /* input:valid {
