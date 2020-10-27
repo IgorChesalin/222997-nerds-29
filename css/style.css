@@ -327,6 +327,23 @@ input[type="radio"].visually-hidden
   padding-top: 27px;
 }
 
+
+.slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 50px;
+  margin-top: 38px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--red-button);
+  border-radius: 3px;
+}
+
 /* slider new slider newslider newslider newslider newslider newslider newslider newslider newslider newslider new */
 
 .border-clear {
