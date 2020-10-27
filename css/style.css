@@ -574,7 +574,7 @@ input[type="radio"].visually-hidden
 /* FOOTER */
 
 .footer {
-  margin-top: 60px;
+  margin-top: 90px;
 }
 
 .footer-map {
@@ -596,7 +596,7 @@ input[type="radio"].visually-hidden
   width: 231px;
   height: 190px;
   top: 86px;
-  left: 822px;
+  left: 684px;
   background-image: url("../img/map-marker.png");
   background-repeat: no-repeat;
 }
@@ -609,7 +609,7 @@ input[type="radio"].visually-hidden
   background-color: var(--white);
   position: absolute;
   top: 54px;
-  left: 140px;
+  /* left: 140px; */
 }
 
 .footer-promo {
@@ -620,7 +620,6 @@ input[type="radio"].visually-hidden
 
 .footer-social {
   display: flex;
-  margin-left: 140px;
   gap: 9px;
 }
 
