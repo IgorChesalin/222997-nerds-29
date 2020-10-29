@@ -10,26 +10,34 @@
 </head>
 
 <body>
-  <div class="main-header-wrapper">
-    <header class="main-header">
-      <a class="main-logo" href="index.html">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс" />
-      </a>
-      <nav class="main-navigation">
-        <ul class="main-navigation-list clear-list">
-          <li><a class="main-navigation-link" href="index.html" title="Студия Нёрдс">Студия</a></li>
-          <li><a class="main-navigation-link" href="">Клиенты</a></li>
-          <li><a class="main-navigation-link" href="catalog.html" title="Страница магазина">Магазин</a></li>
-          <li><a class="main-navigation-link" href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <a href="" class="main-basket" title="Корзина">Корзина</a>
-      <h1 class="main-title">Магазин готовых шаблонов</h1>
-    </header>
+  <header class="main-header">
+    <div class="container">
+      <div class="nav-container">
+        <a class="main-logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс" />
+        </a>
+        <nav class="main-navigation">
+          <ul class="main-navigation-list clear-list">
+            <li><a class="main-navigation-link" href="index.html" title="Студия Нёрдс">Студия</a></li>
+            <li><a class="main-navigation-link" href="">Клиенты</a></li>
+            <li><a class="main-navigation-link main-navigation-link-current" href="catalog.html"
+                title="Страница магазина">Магазин</a></li>
+            <li><a class="main-navigation-link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="basket">
+          <a href="" class="main-basket" title="Корзина">Корзина</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div>
+        <h1 class="main-title">Магазин готовых шаблонов</h1>
+      </div>
+    </div>
+  </header>
 
-  </div>
-
-  <main class="main-container">
+  <main class="container">
     <section class="filter-title">
 
       <p class="filter-header-type">Стоимость:</p>
@@ -213,8 +221,10 @@
     </div>
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer-catalog container">
+
     <div class="footer-map">
+
       <!-- <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300338!2d30.320858716474067!3d59.93871916905372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602170137337!5m2!1sru!2sru"
         width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
@@ -222,23 +232,26 @@
 
       <div class="footer-contacts">
         <p class="contacts-company">NЁRDS DESIGN STUDIO</p>
-        <p class="contacts-adress">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная,&nbsp;д.&nbsp;19/8</p>
+        <p class="contacts-adress">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</p>
         <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         <button class="contacts-button border-clear" type="button">Напишите нам</button>
       </div>
     </div>
 
     <div class="footer-promo">
+
       <ul class="footer-social clear-list">
         <li><a class="social-link social-link-vk" href="wwww.vk.com"></a></li>
         <li><a class="social-link social-link-fb" href="www.facebook.com"></a></li>
         <li><a class="social-link social-link-insta" href="www.instagram.com"></a></li>
       </ul>
+
       <div class="footer-right">
         <p class="promo-slogan">Давайте дружить, это выгодно!</p>
         <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
+
   </footer>
 
 </body>
