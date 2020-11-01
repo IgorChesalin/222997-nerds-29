@@ -236,7 +236,7 @@ input[type="radio"].visually-hidden {
 
 .slider-item {
   display: none;
-  height: 431px;
+  min-height: 431px;
 }
 
 .slide-2-text {
@@ -642,7 +642,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   width: 318px;
-  height: 308px;
+  min-height: 308px;
   background-color: var(--white);
   position: absolute;
   top: 54px;
@@ -1107,7 +1107,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 100%;
   justify-content: center;
-  height: 163px;
+  min-height: 163px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
