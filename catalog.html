@@ -44,11 +44,11 @@
       <p class="filter-header-type">Сортировать:</p>
 
       <div class="filter-header-buttons">
-        <button class="filter-header-button filter-header-button-a" type="button">по цене</button>
-        <button class="filter-header-button" type="button">по типу</button>
-        <button class="filter-header-button" type="button">по названию</button>
-        <button class="filter-header-button button-down" type="button"></button>
-        <button class="filter-header-button button-up" type="button"></button>
+        <a class="filter-header-button filter-header-button-a" type="button">по цене</a>
+        <a class="filter-header-button" type="button">по типу</a>
+        <a class="filter-header-button" type="button">по названию</a>
+        <a class="filter-header-button button-down" type="button"></a>
+        <a class="filter-header-button button-up" type="button"></a>
       </div>
     </div>
 
@@ -93,6 +93,7 @@
                 <input class="visually-hidden filter-grid-checkbox" type="checkbox" name="grid" id="filter-flexible">
                 <label for="filter-flexible">Резиновая</label>
               </li>
+
             </ul>
           </fieldset>
 
@@ -122,7 +123,7 @@
                 <label for="basket">Корзина</label>
               </li>
             </ul>
-            <button class="filter-button border-clear" type="submit">Показать</button>
+            <a class="filter-button border-clear" type="submit">Показать</a>
           </fieldset>
         </form>
       </div>
@@ -138,7 +139,7 @@
                   <h3 class="item-title">Sedona</h3>
                 </a>
                 <p class="item-text">Информационный сайт для&nbsp;туристов</p>
-                <button class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</button>
+                <a class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</a>
               </div>
             </div>
           </li>
@@ -151,7 +152,7 @@
                   <h3 class="item-title">Pink app</h3>
                 </a>
                 <p class="item-text">Продуктовый лендинг приложения&nbsp;для iOS и Android</p>
-                <button class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</button>
+                <a class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</a>
               </div>
             </div>
           </li>
@@ -164,7 +165,7 @@
                   <h3 class="item-title">Barbershop</h3>
                 </a>
                 <p class="item-text item-text-barber">Сайт салона красоты. Для мужчин, да.</p>
-                <button class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</button>
+                <a class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</a>
               </div>
             </div>
           </li>
@@ -177,7 +178,7 @@
                   <h3 class="item-title">Mishka</h3>
                 </a>
                 <p class="item-text item-text-mishka">Интернет-магазин вязаных игрушек</p>
-                <button class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</button>
+                <a class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</a>
               </div>
             </div>
           </li>
@@ -190,7 +191,7 @@
                   <h3 class="item-title">A plus</h3>
                 </a>
                 <p class="item-text">Лендинг курсов повышения квалификации</p>
-                <button class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</button>
+                <a class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</a>
               </div>
             </div>
           </li>
@@ -203,7 +204,7 @@
                   <h3 class="item-title">Кваст</h3>
                 </a>
                 <p class="item-text">Промо-сайт производителя крафтового кваса</p>
-                <button class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</button>
+                <a class="item-buy-button border-clear red-button" type="button">9 900 &#8381;</a>
               </div>
             </div>
           </li>
@@ -221,20 +222,23 @@
     </div>
   </main>
 
-  <footer class="footer footer-catalog container">
-    <div class="footer-map">
-      <div class="footer-contacts">
+  <footer class="footer footer-catalog">
+    <div class="footer-cont">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d5fa09f30dceb3377720a2b43fd7164d630de0ff4db931ed2d2c14901fbc41a&amp;source=constructor"
+        width="100%" height="416" frameborder="0"></iframe>
+      <div class="footer-contacts container">
         <p class="contacts-company">NЁRDS DESIGN STUDIO</p>
         <p class="contacts-adress">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</p>
         <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <button class="contacts-button red-button border-clear" type="button">Напишите нам</button>
+        <a class="contacts-button red-button border-clear" type="button">Напишите нам</a>
       </div>
     </div>
-    <div class="footer-promo">
+    <div class="footer-promo container">
       <ul class="footer-social clear-list">
-        <li><a class="social-link social-link-vk" href="wwww.vk.com"></a></li>
-        <li><a class="social-link social-link-fb" href="www.facebook.com"></a></li>
-        <li><a class="social-link social-link-insta" href="www.instagram.com"></a></li>
+        <li><a class="social-link social-link-vk" href="wwww.vk.com" title="wwww.vk.com"></a></li>
+        <li><a class="social-link social-link-fb" href="www.facebook.com" title="www.facebook.com"></a></li>
+        <li><a class="social-link social-link-insta" href="www.instagram.com" title="www.instagram.com"></a></li>
       </ul>
       <div class="footer-right">
         <p class="promo-slogan">Давайте дружить, это выгодно!</p>
@@ -246,7 +250,7 @@
   <div class="modal-content">
     <div class="form-title">
       <h2>Напишите нам</h2>
-      <button class="close-bnt border-clear"></button>
+      <a class="close-bnt border-clear"></a>
     </div>
     <form action="https://echo.htmlacademy.ru/">
       <div class="form-contacts">
@@ -265,7 +269,7 @@
         <label for="letter">Текст письма:</label>
         <textarea name="letter" id="letter" rows="4" placeholder="В свободной форме" required></textarea>
       </div>
-      <button class="form-button-send red-button border-clear" type="submit">Отправить</button>
+      <a class="form-button-send red-button border-clear" type="submit">Отправить</a>
     </form>
   </div>
   <script src="js/script.js"></script>
