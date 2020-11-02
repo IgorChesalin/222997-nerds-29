@@ -638,6 +638,10 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.footer-cont {
+  position: relative;
+}
+
 .footer-contacts {
   display: flex;
   flex-direction: column;
@@ -645,7 +649,10 @@ input[type="radio"].visually-hidden {
   min-height: 308px;
   background-color: var(--white);
   position: absolute;
-  top: 54px;
+  top: 50%;
+  left: calc((100% - 1160px) / 2);
+  z-index: 10;
+  transform: translateY(-50%);
 }
 
 .footer-promo {
